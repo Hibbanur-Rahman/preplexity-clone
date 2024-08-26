@@ -8,11 +8,11 @@ const HomeDashboard = () => {
     setInputValue(e.target.value);
   };
   return (
-    <div className="bg-[#191a1a] w-full h-full rounded-xl flex flex-col justify-center items-center">
+    <div className="bg-[#191a1a] w-full h-full rounded-xl flex flex-col md:justify-center items-center">
       <h1 className="text-white text-3xl text-center">
         Where knowledge begins
       </h1>
-      <div className="w-6/12 flex flex-col justify-center items-center mt-10 ">
+      <div className="md:w-6/12 w-11/12 flex flex-col justify-center items-center mt-10 ">
         <div className="pb-3 border-1 focus-within:border-2 border-[#3d3f40] w-full rounded-lg overflow-hidden bg-[#202222]">
           <textarea
             onChange={(e) => handleInputChange(e)}
@@ -87,8 +87,8 @@ const HomeDashboard = () => {
           </div>
         </div>
       </div>
-      <div className="w-6/12 flex mt-4 gap-[10px]">
-        <div className="w-6/12  items-center flex gap-[10px] p-1 rounded-xl border-[1px] border-[#3d3f40]">
+      <div className="md:w-6/12 w-11/12 flex md:flex-row flex-col mt-4 gap-[10px]">
+        <div className="md:w-6/12 w-full  items-center flex gap-[10px] p-1 rounded-xl border-[1px] border-[#3d3f40]">
           <div className="bg-[#172528] p-1 rounded-lg h-min text-lg">🎓</div>
           <div className="">
             <p className="text-semibold text-white">
@@ -96,7 +96,7 @@ const HomeDashboard = () => {
             </p>
           </div>
         </div>
-        <div className="w-6/12  items-center flex gap-[10px] p-1 rounded-xl border-[1px] border-[#3d3f40]">
+        <div className="md:w-6/12 w-full items-center flex gap-[10px] p-1 rounded-xl border-[1px] border-[#3d3f40]">
           <div className="bg-[#172528] p-1 rounded-lg h-min text-lg">⛰️</div>
           <div className="">
             <p className="text-semibold text-white">
@@ -105,8 +105,8 @@ const HomeDashboard = () => {
           </div>
         </div>
       </div>
-      <div className="w-6/12 flex mt-4 gap-[10px]">
-        <div className="w-6/12  items-center flex gap-[10px] p-1 rounded-xl border-[1px] border-[#3d3f40]">
+      <div className="md:w-6/12 w-11/12 flex md:flex-row flex-col mt-4 gap-[10px]">
+        <div className="md:w-6/12 w-full  items-center flex gap-[10px] p-1 rounded-xl border-[1px] border-[#3d3f40]">
           <div className="bg-[#172528] p-1 rounded-lg h-min text-lg">🔎</div>
           <div className="">
             <p className="text-semibold text-white">
@@ -114,7 +114,7 @@ const HomeDashboard = () => {
             </p>
           </div>
         </div>
-        <div className="w-6/12  items-center flex gap-[10px] p-1 rounded-xl border-[1px] border-[#3d3f40]">
+        <div className="md:w-6/12 w-full  items-center flex gap-[10px] p-1 rounded-xl border-[1px] border-[#3d3f40]">
           <div className="bg-[#172528] p-1 rounded-lg h-min text-lg">🎬</div>
           <div className="">
             <p className="text-semibold text-white">

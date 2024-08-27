@@ -98,10 +98,11 @@ export function SidebarItem({ icon, text, active, alert }) {
   return (
     <li
       className={`relative flex items-center justify-center py-2 px-4  my-1 font-medium rounded-md cursor-pointer transition-colors group text-[#8d9191] ${
-        active && !expanded
+         active && !expanded
           ? " text-white border-r-[3px] rounded-t-none rounded-b-none"
           : "hover:bg-[#2d2f2f] hover:text-white text-[#8d9191]"
-      } `}
+      } ${active ?'text-white':''}`
+    }
     >
       {icon}
       <span
